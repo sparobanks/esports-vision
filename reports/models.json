@@ -1,0 +1,110 @@
+{
+  "prematch": {
+    "matches_after_burn_in": 3000,
+    "elo_vs_true_strength_correlation": 0.981,
+    "log_loss": 0.4056,
+    "brier": 0.1308,
+    "ece": 0.0351
+  },
+  "inplay": {
+    "train_states": 120000,
+    "test_states": 60000,
+    "test_matches": 1000,
+    "model": {
+      "log_loss": 0.2857,
+      "brier": 0.0901,
+      "ece": 0.0253
+    },
+    "score_and_clock_only": {
+      "log_loss": 0.3888,
+      "brier": 0.1299,
+      "ece": 0.0364
+    },
+    "prematch_only": {
+      "log_loss": 0.4056,
+      "brier": 0.1308,
+      "ece": 0.0351
+    },
+    "by_quarter": {
+      "Q1": {
+        "log_loss": 0.3868,
+        "brier": 0.1239,
+        "ece": 0.034
+      },
+      "Q2": {
+        "log_loss": 0.335,
+        "brier": 0.1059,
+        "ece": 0.0258
+      },
+      "Q3": {
+        "log_loss": 0.262,
+        "brier": 0.0815,
+        "ece": 0.0248
+      },
+      "Q4": {
+        "log_loss": 0.1589,
+        "brier": 0.0491,
+        "ece": 0.0187
+      }
+    },
+    "example_prices": [
+      {
+        "state": "tip-off, even teams",
+        "p_home": 0.58,
+        "fair_odds_home": 1.72
+      },
+      {
+        "state": "home +6, 5 minutes left, away ball",
+        "p_home": 0.874,
+        "fair_odds_home": 1.14
+      },
+      {
+        "state": "home -3, 30 seconds left, home ball",
+        "p_home": 0.129,
+        "fair_odds_home": 7.74
+      }
+    ]
+  },
+  "irregular": [
+    {
+      "underperformance_length": "2.5 to 5 minutes",
+      "matches": 2000,
+      "irregular": 107,
+      "roc_auc": 0.601,
+      "alert_rate": 0.03,
+      "flagged": 60,
+      "precision": 0.1,
+      "recall": 0.056,
+      "right_team_when_caught": 1.0
+    },
+    {
+      "underperformance_length": "5 minutes",
+      "matches": 2000,
+      "irregular": 105,
+      "roc_auc": 0.617,
+      "alert_rate": 0.03,
+      "flagged": 60,
+      "precision": 0.233,
+      "recall": 0.133,
+      "right_team_when_caught": 0.929
+    },
+    {
+      "underperformance_length": "10 minutes (whole second half)",
+      "matches": 2000,
+      "irregular": 91,
+      "roc_auc": 0.811,
+      "alert_rate": 0.03,
+      "flagged": 60,
+      "precision": 0.45,
+      "recall": 0.297,
+      "right_team_when_caught": 1.0
+    }
+  ],
+  "live_demo": {
+    "clip": "testA1",
+    "seconds": 239,
+    "prematch_home_win": 0.64,
+    "mean_abs_difference_cv_vs_true": 0.0044,
+    "max_abs_difference": 0.0636
+  }
+}

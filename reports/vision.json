@@ -1,0 +1,246 @@
+{
+  "train": {
+    "clips": [
+      "train0",
+      "train1",
+      "train2",
+      "train3",
+      "train4"
+    ],
+    "crops": 50000,
+    "loss_per_epoch": [
+      0.2644,
+      0.0053,
+      0.0022,
+      0.002,
+      0.0022,
+      0.0014
+    ],
+    "parameters": 97739
+  },
+  "testA": {
+    "style": "A",
+    "degrade": "normal",
+    "clips": [
+      "testA0",
+      "testA1",
+      "testA2"
+    ],
+    "seconds_of_video": 720,
+    "digit_reader": {
+      "slot_accuracy_visible": 1.0,
+      "covered_slots_read_as_no_digit": 1.0,
+      "slots_tested": 36000
+    },
+    "frames": {
+      "visible_frames": 17790,
+      "fully_correct": 17790,
+      "unreadable": 0,
+      "wrong_score": 0,
+      "hidden_frames": 209,
+      "hidden_frames_with_wrong_score": 8
+    },
+    "score_events": {
+      "true": 29,
+      "detected": 29,
+      "matched": 29,
+      "false_events": 0,
+      "missed": 0,
+      "points_correct": 29,
+      "median_latency_ms": 80.0,
+      "p95_latency_ms": 80.0
+    },
+    "score_events_without_temporal_logic": {
+      "true": 29,
+      "detected": 45,
+      "matched": 29,
+      "false_events": 16,
+      "missed": 0
+    },
+    "shots": {
+      "true": 51,
+      "detected": 51,
+      "matched": 51,
+      "median_latency_ms": 280.0
+    },
+    "tracking": {
+      "player_precision": 0.9988,
+      "player_recall": 0.9978,
+      "team_accuracy": 0.9998,
+      "id_switches_per_1000_player_frames": 0.2433,
+      "ball_median_error_px": 1.93
+    },
+    "latency_ms_per_frame": {
+      "decode": {
+        "median": 0.51,
+        "p95": 1.85,
+        "p99": 2.46
+      },
+      "hud": {
+        "median": 2.98,
+        "p95": 4.82,
+        "p99": 12.82
+      },
+      "tracking": {
+        "median": 3.47,
+        "p95": 4.72,
+        "p99": 6.01
+      },
+      "total": {
+        "median": 7.41,
+        "p95": 10.52,
+        "p99": 17.79
+      }
+    }
+  },
+  "testB": {
+    "style": "B",
+    "degrade": "normal",
+    "clips": [
+      "testB0",
+      "testB1",
+      "testB2"
+    ],
+    "seconds_of_video": 720,
+    "digit_reader": {
+      "slot_accuracy_visible": 1.0,
+      "covered_slots_read_as_no_digit": 1.0,
+      "slots_tested": 36000
+    },
+    "frames": {
+      "visible_frames": 17825,
+      "fully_correct": 17825,
+      "unreadable": 0,
+      "wrong_score": 0,
+      "hidden_frames": 174,
+      "hidden_frames_with_wrong_score": 8
+    },
+    "score_events": {
+      "true": 29,
+      "detected": 29,
+      "matched": 29,
+      "false_events": 0,
+      "missed": 0,
+      "points_correct": 29,
+      "median_latency_ms": 80.0,
+      "p95_latency_ms": 80.0
+    },
+    "score_events_without_temporal_logic": {
+      "true": 29,
+      "detected": 45,
+      "matched": 29,
+      "false_events": 16,
+      "missed": 0
+    },
+    "shots": {
+      "true": 51,
+      "detected": 51,
+      "matched": 51,
+      "median_latency_ms": 280.0
+    },
+    "tracking": {
+      "player_precision": 0.999,
+      "player_recall": 0.9983,
+      "team_accuracy": 0.9998,
+      "id_switches_per_1000_player_frames": 0.1167,
+      "ball_median_error_px": 1.9433
+    },
+    "latency_ms_per_frame": {
+      "decode": {
+        "median": 0.54,
+        "p95": 1.92,
+        "p99": 2.54
+      },
+      "hud": {
+        "median": 3.21,
+        "p95": 5.12,
+        "p99": 12.91
+      },
+      "tracking": {
+        "median": 3.58,
+        "p95": 4.94,
+        "p99": 6.04
+      },
+      "total": {
+        "median": 7.78,
+        "p95": 10.97,
+        "p99": 18.02
+      }
+    }
+  },
+  "testC": {
+    "style": "B",
+    "degrade": "hard",
+    "clips": [
+      "testC0",
+      "testC1",
+      "testC2"
+    ],
+    "seconds_of_video": 720,
+    "digit_reader": {
+      "slot_accuracy_visible": 0.9965,
+      "covered_slots_read_as_no_digit": 0.9628,
+      "slots_tested": 36000
+    },
+    "frames": {
+      "visible_frames": 17812,
+      "fully_correct": 17279,
+      "unreadable": 214,
+      "wrong_score": 319,
+      "hidden_frames": 187,
+      "hidden_frames_with_wrong_score": 10
+    },
+    "score_events": {
+      "true": 29,
+      "detected": 29,
+      "matched": 29,
+      "false_events": 0,
+      "missed": 0,
+      "points_correct": 29,
+      "median_latency_ms": 80.0,
+      "p95_latency_ms": 200.0
+    },
+    "score_events_without_temporal_logic": {
+      "true": 29,
+      "detected": 703,
+      "matched": 29,
+      "false_events": 674,
+      "missed": 0
+    },
+    "shots": {
+      "true": 51,
+      "detected": 51,
+      "matched": 51,
+      "median_latency_ms": 240.0
+    },
+    "tracking": {
+      "player_precision": 0.8807,
+      "player_recall": 0.9334,
+      "team_accuracy": 0.9998,
+      "id_switches_per_1000_player_frames": 67.72,
+      "ball_median_error_px": 2.3067
+    },
+    "latency_ms_per_frame": {
+      "decode": {
+        "median": 0.55,
+        "p95": 1.89,
+        "p99": 2.61
+      },
+      "hud": {
+        "median": 3.11,
+        "p95": 5.1,
+        "p99": 12.82
+      },
+      "tracking": {
+        "median": 3.74,
+        "p95": 5.39,
+        "p99": 6.54
+      },
+      "total": {
+        "median": 7.85,
+        "p95": 11.37,
+        "p99": 18.26
+      }
+    }
+  }
+}
